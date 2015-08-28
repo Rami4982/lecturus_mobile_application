@@ -158,8 +158,15 @@ var app = {    // Application Constructor
             window.requestFileSystem( LocalFileSystem.PERSISTENT , 0 , gotFileSystem , fsFail );// get file system to copy or move image file to
         }
 
+        /**
+         * record the Audio file
+         * this function create the recordings file and switch between them when one of them needs to be uploaded to the server .
+         * it starts the an interval that mimic a timer and sets the values for the timer that is displayed for the user.
+         * when the window.orientation is horizontal it fires up the takePicture function .
+         * when the lenghth for the audio file is the maximum it switches between the recordings files and
+         * sends the full length file to the server by calling the stopRecord() and startRecord() function respectively
+         */
 
-//            record the Audio file
         function recordAudio()
         {
             sec = secShow = 0;
