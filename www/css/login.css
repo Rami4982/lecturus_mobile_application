@@ -1,0 +1,41 @@
+@charset "utf-8";
+@import 'style.css';
+@import "auth_theme.css";
+#Wrapper_Body
+{
+	background: -webkit-linear-gradient(#60578E, #343240); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#60578E, #343240); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#60578E, #343240); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#60578E, #343240); /* Standard syntax */
+
+}
+/*______________BODY CONTENT CLASESS__________*/
+
+.ui-content
+{
+	margin: 50% auto 0 auto!important;
+	width: 80%;
+
+}
+.ui-btn
+{
+
+
+}
+/*______________login button CLASESS__________*/
+.btn-login
+{
+	color                 : red !important;
+	cursor                : pointer;
+	width                 : 100%;
+	display               : block;
+	height                : 30px;
+	font-size             : 120%;
+	padding-top           : 2px;
+	line-height           : 120%;
+	margin                : 5% 5% 0 0;
+
+	moz-border-radius     : 10px;
+	-webkit-border-radius : 10px;
+	border-radius         : 10px;
+}

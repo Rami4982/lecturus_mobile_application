@@ -1,0 +1,18 @@
+@charset "utf-8";
+@import 'style.css';
+
+.ui-page-theme-a, .ui-body-inherit, .ui-page-theme-a
+{
+	background-color : transparent !important; border : none !important;
+	box-shadow       : none !important; color : #9696aa; text-shadow : none !important; font-size : 150% !important; font-weight : 100 !important;
+}
+
+.ui-shadow-inset
+{
+	box-shadow : none !important;
+}
+
+.ui-overlay-shadow .ui-body-e .ui-corner-all
+{
+	text-shadow : none !important;
+}

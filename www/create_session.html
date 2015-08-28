@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>New session</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=medium-dpi">
+    <script type="text/javascript" src="cordova.js"></script>
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+    <script type="text/javascript" charset="utf-8" src="js/lib/jquery-latest.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/lib/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="js/constants.js"></script>
+    <script type="text/javascript" src="js/mutual.js"></script>
+    <script type="text/javascript" src="js/general.js"></script>
+    <script type="text/javascript" src="js/create_session.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/create_session.css">
+</head>
+<body>
+<section data-role="page" id="Wrapper_Body">
+    <section id="deviceready">
+        <header data-role="header"><h1>New session</h1>
+            <img src="img/hamburger.png" alt="menu" id="openMenu" class="Toggle_Menu">  <img src="img/x.png" alt="X" id="closeMenu" class="Toggle_Menu">
+        </header>
+        <section role="main" class="ui-content">
+    <h2>New Session Details</h2>
+    <form id="myform" action="javascript:sendJson ();">
+       <ul class="ulForm">
+           <li>
+                <input required="required" type="text" placeholder="Recording Name" id="name" maxlength="50">
+           </li>
+            <li>
+                <input required="required" type="text" value="test" id="Subject" placeholder="Subject" maxlength="100">
+            </li>
+            <li>
+                <select id="listOfDegrees">
+                    <option value="">Category </option>
+                </select>
+                <input type="hidden" size="1" id="degree">
+            </li>
+            <li>
+                <select id="listOfCourses">
+                    <option value="" selected="selected">Select Course</option>
+                </select>
+                <input type="hidden" size="1" id="course">
+            </li>
+            <li>
+                <select id="listOfLecturers">
+                    <option value="" selected="selected">Select Lecturer</option>
+                </select>
+            </li>
+
+            <section class="submit">
+                <img src="img/add-members-button.png" ><img src="img/continue-button-2.png">
+            </section>
+        </ul>
+    </form>
+  </section>
+    </section><!-- /footer -->
+    <aside id="Menu"></aside>
+    <img src="img/loader.gif" id="loader">
+</section>
+</body>
+</html>

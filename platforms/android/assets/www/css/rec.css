@@ -1,0 +1,339 @@
+@charset "utf-8";
+@import 'style.css';
+
+#Wrapper_Body
+{
+	background-image : linear-gradient(top, #60578e 0%, #343240 100%);
+	background-image : -webkit-linear-gradient(top, #60578e 0%, #343240 100%);
+	background-image : -ms-linear-gradient(top, #60578e 0%, #343240 100%);
+	background-image : -webkit-gradient(linear, left top, left bottom, color-stop(0, #60578e), color-stop(0.0, #343240));
+	background       : -webkit-linear-gradient(#60578e, #343240); /* For Safari 5.1 to 6.0 */
+	background       : -o-linear-gradient(#60578e, #343240); /* For Opera 11.1 to 12.0 */
+	background       : -moz-linear-gradient(#60578e, #343240); /* For Firefox 3.6 to 15 */
+	background       : linear-gradient(#60578e, #343240); /* Standard syntax */
+}
+
+#deviceready
+{
+	background : none !important;
+}
+/*ALL THE SECTION FOR THE RECord  AREA*/
+#record_Section
+{
+	margin : 0% 0px 0px 5%;
+	width  : 90%;
+}
+
+.ui-content h2
+{
+	margin-top : 0% !important;
+}
+/*THE NOTES TABS*/
+.Notes
+{
+	list-style : none; width : 100%; margin-left : 0px !important;
+	/*	display    : none;*/
+}
+
+/*  750     1335*/
+
+.Notes li
+{
+	cursor           : pointer;
+	width            : 45%;
+	display          : inline-block;
+	height           : 12%;
+	font-family      : "Helvetica";
+	color            : rgb(0, 171, 223);
+	font-size        : 154%;
+	padding          : 0%;
+	min-height       : 50px;
+	line-height      : 251%;
+	margin           : 4.5% 0% 0 6%;
+	border-color     : rgb(0, 171, 223);
+	background-color : rgba(0, 0, 0, 0.6);
+	border           : solid 3px;
+	text-shadow      : none !important;
+	text-align       : center;
+	border-width     : 2px;
+}
+
+.Notes li:focus, .Notes li:active
+{
+	background-color : #f4f4f4;
+}
+
+#tag1
+{
+	color : #ff7b30; margin-left : 0%;
+}
+
+#tag2
+{
+	color : rgb(252, 90, 69);
+}
+
+#tag3
+{
+	color : rgb(39, 203, 197); margin-left : 0%;
+}
+/*THE LIST THAT DISPLAY THE NOTES*/
+#NotesDisplay
+{
+	overflow-y : scroll;
+	height     : 150px;
+	margin     : 5% auto;
+}
+
+#NotesDisplay ul
+{
+	list-style : none; width : 90%;
+	margin     : 2% auto;
+}
+
+#NotesDisplay ul li *
+{
+	display           : inline-block; width : 40%; text-shadow : none !important; font-size : 150% !important; margin : 1% 0px !important;
+	color             : #ffffff; text-align : left;
+	font-family       : "Helvetica";
+	color             : rgb(223, 223, 223);
+	margin-top        : 2%;
+	-moz-transform    : matrix(1.25636709293603, 0, 0, 1.25636709293603, 0, 0);
+	-webkit-transform : matrix(1.25636709293603, 0, 0, 1.25636709293603, 0, 0);
+	-ms-transform     : matrix(1.25636709293603, 0, 0, 1.25636709293603, 0, 0);
+}
+
+#NotesDisplay ul li aside
+{
+	width : 35%;
+	color : rgb(255, 175, 48);
+}
+
+.ui-mobile label
+{
+	margin      : 0px !important;
+	text-shadow : none !important;
+	color       : #e8e8e9 !important;
+}
+/*THE SECONDS COUNTER*/
+#countUp
+{
+	width         : 100%;
+	text-align    : center;
+	border-bottom : thin solid;
+	border-color  : rgba(13, 13, 16, 0.4);
+	border-top    : thin solid;
+	margin-bottom : 50px;
+}
+
+#countUpInside
+{
+	width  : 50%;
+	margin : 0 auto;
+}
+
+#countUp label
+{
+	display     : inline-block; font-size : 350%; color : #ffffff !important; padding : 2%;
+	font-family : "Helvetica";
+	color       : rgb(255, 255, 255);
+	line-height : 1.304;
+}
+
+.ui-page-theme-a .ui-bar-inherit
+{
+	background-color : #1f1e26 !important;
+}
+/*footer BUTTONS*/
+footer
+{
+	height : 250px;
+	height     : auto;
+}
+
+#CameraBtn, #switchOwnerBtn
+{
+	width : 98% !important; display : none;
+}
+
+#switchOwnerBtn
+{
+	margin-left : 5%;
+}
+
+#rec_Btns
+{
+	top : 10px; left : 0px; border : #0099ff thick outset; padding : 0px; width : 10%;
+}
+
+#rec_Btns *
+{
+	text-align : center; margin : 0px auto;
+}
+
+#rec_Btns h2
+{
+	margin  : 0px;
+	padding : 0px;
+}
+
+#rec_Btns button, #recordBtn, #stopBtn
+{
+	width            : 100%;
+	height           : 65px;
+	margin-right     : auto; border : none; background-size : 100% 100%; display : block;
+	background-image : url(../img/play.png); color : #ff00ff;
+}
+
+#stopBtn
+{
+	background-image : url(../img/stop.png); color : #ff00ff; display : none;
+}
+/*POP UP MESSAGE WHEN FINISH SESsion */
+.Thank_message *
+{
+	width : 40%;
+}
+
+.Thank_message, #Thank_message_owner
+{
+	display : none;
+}
+
+.Thank_message button, #Thank_message_owner .ui-btn
+{
+	display : inline-block; width : 46%; margin-left : 5%;
+}
+
+#Thank_message_owner > button:first-of-type
+{
+	margin-left : 0%;
+}
+
+#Thank_message_owner > button:last-of-type
+{
+	width : 97%; margin-left : 0%;
+}
+
+/*__________________________________________________________
+ERRORR POP UP WHEN DEPOSIT WAS DECLINED.
+__________________________________________________________*/
+
+.Error_Black_BG
+{
+	position   : fixed;
+	z-index    : 1200;
+	width      : 100%;
+	height     : 100%;
+	top        : 0;
+	left       : 0;
+	background : -moz-linear-gradient(top, rgba(0, 0, 0, 0.31) 0%, rgba(0, 0, 0, 0.31) 1%, rgba(0, 0, 0, 0.1) 100%); /* FF3.6+ */
+	background : -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.31)), color-stop(1%, rgba(0, 0, 0, 0.31)), color-stop(100%, rgba(0, 0, 0, 0.1))); /* Chrome,Safari4+ */
+	background : -webkit-linear-gradient(top, rgba(0, 0, 0, 0.31) 0%, rgba(0, 0, 0, 0.31) 1%, rgba(0, 0, 0, 0.1) 100%); /* Chrome10+,Safari5.1+ */
+	background : -o-linear-gradient(top, rgba(0, 0, 0, 0.31) 0%, rgba(0, 0, 0, 0.31) 1%, rgba(0, 0, 0, 0.1) 100%); /* Opera 11.10+ */
+	background : -ms-linear-gradient(top, rgba(0, 0, 0, 0.31) 0%, rgba(0, 0, 0, 0.31) 1%, rgba(0, 0, 0, 0.1) 100%); /* IE10+ */
+	background : linear-gradient(to bottom, rgba(0, 0, 0, 0.31) 0%, rgba(0, 0, 0, 0.31) 1%, rgba(0, 0, 0, 0.1) 100%); /* W3C */
+	filter     : progid:DXImageTransform.Microsoft.gradient(startColorstr='#4f000000', endColorstr='#1a000000', GradientType=0); /* IE6-9 */
+}
+
+.Error_Black_BG .main
+{
+	width       : 453px;
+	line-height : 100%;
+	position    : fixed;
+	top         : 50%;
+	margin-top  : -93px;
+	left        : 50%;
+	margin-left : -237px;
+	height      : 166px;
+	padding     : 10px;
+	z-index     : 101;
+	background  : rgba(254, 254, 254, 1);
+	background  : -moz-linear-gradient(top, rgba(254, 254, 254, 1) 0%, rgba(230, 230, 230, 1) 100%);
+	background  : -webkit-gradient(left top, left bottom, color-stop(0%, rgba(254, 254, 254, 1)), color-stop(100%, rgba(230, 230, 230, 1)));
+	background  : -webkit-linear-gradient(top, rgba(254, 254, 254, 1) 0%, rgba(230, 230, 230, 1) 100%);
+	background  : -o-linear-gradient(top, rgba(254, 254, 254, 1) 0%, rgba(230, 230, 230, 1) 100%);
+	background  : -ms-linear-gradient(top, rgba(254, 254, 254, 1) 0%, rgba(230, 230, 230, 1) 100%);
+	background  : linear-gradient(to bottom, rgba(254, 254, 254, 1) 0%, rgba(230, 230, 230, 1) 100%);
+	filter      : progid:DXImageTransform.Microsoft.gradient(startColorstr='#fefefe', endColorstr='#e6e6e6', GradientType=0);
+}
+
+.Error_Black_BG .main *
+{
+	display        : inline-block;
+	vertical-align : top;
+}
+
+.System_Messeges
+{
+	font-size   : 150%;
+	font-family : "Helvetica";
+	color       : rgb(160, 160, 162);
+	line-height : 1.05;
+	text-align  : center;
+	text-shadow : none !important;
+	margin-top  : 2%;
+}
+
+/*__________________________________________________________
+END ERRORR POP UP WHEN USER IS NOT REGULAR BUT FROG ETC.
+__________________________________________________________*/
+/*MEDIA QUERIES*/
+@media (min-device-width : 380px) and (max-device-width : 481px)
+{/*SUMSUNG*/
+	footer
+	{
+		min-height : 150px;
+	}
+	#NotesDisplay
+	{
+		height: 250px;
+	}
+	#rec_Btns button, #recordBtn, #stopBtn
+	{
+		width            : 90%;
+		max-height           : 45px;
+		margin: 0 auto;
+	}
+
+
+}
+@media (min-device-width : 330px) and (max-device-width : 479px)
+{/*MOTOROLA*/
+	#NotesDisplay
+	{
+		height: 150px;
+	}
+	#countUp,.ui-content
+	{
+		margin-bottom: 0px;
+	}
+	footer
+	{
+		min-height : 127px;
+
+	}
+	#rec_Btns button, #recordBtn, #stopBtn
+	{
+		width            : 90%;
+		max-height           : 35px;
+		margin: 0 auto;
+	}
+
+
+}
+@media (max-width : 321px)
+{
+	footer
+	{
+
+	}
+	#NotesDisplay
+	{
+		max-height: 50px;
+	}
+	#countUp,.ui-content
+	{
+		margin-bottom: 0px;
+	}
+}

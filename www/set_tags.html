@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>set tags</title>
+<meta name="format-detection" content="telephone=no">
+<meta name="msapplication-tap-highlight" content="no">
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi">
+<script type="text/javascript" src="cordova.js"></script>
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+<script type="text/javascript" charset="utf-8" src="js/lib/jquery-latest.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/lib/jquery.mobile-1.4.5.min.js"></script>
+<script type="text/javascript" src="js/constants.js"></script>
+<script type="text/javascript" src="js/mutual.js"></script>
+<script type="text/javascript" src="js/general.js"></script>
+<script type="text/javascript" src="js/set_tags.js"></script>
+<link rel="stylesheet" type="text/css" href="css/set_tags.css">
+</head>
+<body data-role="none" data-enhance="false">
+<section data-role="page" id="Wrapper_Body">
+  <section id="deviceready">
+        <p class="event listening"></p>
+        <p class="event received"></p>
+    <header data-role="header"><h1>Set Tags</h1>
+         <img src="img/hamburger.png" alt="menu" id="openMenu" class="Toggle_Menu">  <img src="img/x.png" alt="X" id="closeMenu" class="Toggle_Menu">
+    </header>
+    <section role="main" class="ui-content">
+    <h2>tap a Tag to set it</h2>
+    <form id="myform" action="javascript:sendJson();">
+       <ul class="ulForm">
+           <li>
+                <input required="required" type="text" id="tag1" maxlength="20" placeholder="tag1">
+           </li>
+           <li>
+                <input required="required" type="text" id="tag2" maxlength="20" placeholder="tag2">
+           </li>
+           <li>
+                <input required="required" type="text" id="tag3" maxlength="20" placeholder="tag3">
+           </li>
+           <li>
+                <input required="required" type="text" id="tag4" maxlength="20" placeholder="tag4">
+           </li>
+            <li class="noBorder" id="SubmitBtn">
+                <button type="submit" id="btn" class="btn">Save</button>
+            </li>
+        </ul>
+    </form>
+  </section>
+    </section>
+    <aside id="Menu"></aside>
+</section>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi">
+    <script type="text/javascript" src="cordova.js"></script>
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+    <script type="text/javascript" charset="utf-8" src="js/lib/jquery-latest.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/lib/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="js/lib/PushNotification.js"></script>
+    <script type="text/javascript" src="js/constants.js"></script>
+    <script type="text/javascript" src="js/mutual.js"></script>
+    <script type="text/javascript" src="js/general.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <script src="js/lib/lock-7.1.min.js"></script>
+    </head>
+<body>
+<section data-role="page" id="Wrapper_Body">
+    <section id="deviceready">
+        <header data-role="header"><h1>Login</h1>
+            <img src="img/hamburger.png" alt="menu" id="openMenu" class="Toggle_Menu">  <img src="img/x.png" alt="X" id="closeMenu" class="Toggle_Menu">
+        </header>
+        <section role="main" class="ui-content">
+            <input type="submit" class="btn-login" value="login with Social networks">
+            <section class="logged-in-box auth0-box logged-in content-padded" style="display: none;">
+            <h2>Welcome <span class="nickname"></span></h2>
+
+            </section>
+        </section>
+
+    </section>
+    <aside id="Menu">   </aside>
+</section>
+</body>
+</html>
+      <!--<button onclick="location='registerUser.html';">next page</button>-->

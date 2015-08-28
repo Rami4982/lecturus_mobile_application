@@ -1,0 +1,91 @@
+@charset "utf-8";
+@import 'style.css';
+
+#Wrapper_Body
+{
+	background : -webkit-linear-gradient(#60578e, #343240); /* For Safari 5.1 to 6.0 */
+	background : -o-linear-gradient(#60578e, #343240); /* For Opera 11.1 to 12.0 */
+	background : -moz-linear-gradient(#60578e, #343240); /* For Firefox 3.6 to 15 */
+	background : linear-gradient(#60578e, #343240); /* Standard syntax */
+}
+
+/*_____________form classess________________*/
+#myform
+{
+	margin : 40% 0px 0px 0%;
+	width  : 100%;
+}
+
+.ulForm li
+{
+	border-left : thick solid #27cbc5; padding-left : 2%;
+}
+
+.ui-page-theme-a .ui-body-inherit, .ui-page-theme-a .ui-btn
+{
+	background-color : transparent !important; border : none !important;
+	box-shadow       : none !important; color : #9696aa !important; text-shadow : none !important; font-size : 100% !important; font-weight : 100 !important;
+}
+
+.ui-shadow-inset
+{
+	box-shadow : none !important;
+}
+
+.ui-input-text input[type="text"], .ui-select
+{
+	box-shadow       : 0px !important;
+	background-color : transparent !important;
+	outline          : none !important;
+	width            : 100%;
+	height           : 42px !important; font-size : 180%; color : #9696aa !important;
+	text-shadow      : none !important;
+	border-radius    : 0px;
+	border-bottom    : thick solid #524b76 !important;
+}
+
+#privateLabel
+{
+	font-size : 180% !important;
+}
+
+.submit img
+{
+	display : inline-block;
+	width   : 47.5%;
+}
+
+.submit img:last-child
+{
+	margin-left : 5%;
+}
+
+#Continue_btn
+{
+	background-image : url("../img/continue-button-2.png");
+	width            : 50%;
+}
+
+.noBorder
+{
+	border-left : none !important;
+}
+
+#SubmitBtn > .ui-btn, #SubmitBtn > .ui-input-btn
+{
+	font-size : 180% !important;
+}
+
+#btn, .ui-input-btn
+{
+	border-color     : #dddddd;
+	color            : #000000;
+	text-shadow      : 0px 1px 0px #f3f3f3;
+	font-size        : 180% !important;
+	line-height      : 120%;
+	background-color:#27CBC5	 !important;
+	opacity: 1 !important;
+	padding          : 0px;
+}
+
+/*_____________end form classess________________*/

@@ -1,0 +1,21 @@
+<nav>
+            <ul>
+              <li onclick = "location='home.html';">home</li>
+              <li onclick = "location='set_tags.html';">set tags</li>
+              <li onclick = "location='about.html';">about</li>
+                <li onclick = "window.open('mailto:lecturus@se.shenkar.ac.il?subject=report a bug in mobile application ', '_system'); return false;">report a bug</li>
+               <li>               <input type = "checkbox" id = "autoCamera" name = "test" onclick = "saveSettingCamera();">
+               <label for = "autoCamera" id = "autoCameraLabel">auto camera in landscape</label>
+            </li>
+
+             </ul>
+        <section id = "Dev_Messages">
+            <h2>Development Messages</h2>
+            <input type = "text" id = "postInpu">
+            <label id = "errorMsg"></label>
+            <section id = "errorMsgAjax"></section>
+            <section id = "Timer">      </section>
+            <ul id = "app-status-ul"></ul>
+
+        </section>
+        </nav>

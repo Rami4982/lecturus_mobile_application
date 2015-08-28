@@ -1,0 +1,83 @@
+@charset "utf-8";
+@import 'style.css';
+
+#Wrapper_Body
+{
+	background : -webkit-linear-gradient(#60578e, #343240); /* For Safari 5.1 to 6.0 */
+	background : -o-linear-gradient(#60578e, #343240); /* For Opera 11.1 to 12.0 */
+	background : -moz-linear-gradient(#60578e, #343240); /* For Firefox 3.6 to 15 */
+	background : linear-gradient(#60578e, #343240); /* Standard syntax */
+}
+
+/*______________BODY CONTENT CLASESS__________*/
+.ui-content
+{
+	margin : 1% auto 0 auto !important;
+	width  : 80%;
+}
+
+.ui-content h2
+{
+	margin-top : 48%;
+}
+
+/*______________Active Users CLASESS__________*/
+
+.Container
+{
+	width : 100%;
+}
+
+#ActiveUsers
+{
+	list-style : none; text-align : left;
+}
+
+#ActiveUsers li
+{
+	margin        : 5px 0px;
+	display       : inline-block;
+	padding-left  : 2%;
+	border-bottom : solid thick #767093;
+	height        : 35px;
+	font-size     : 80%;
+}
+
+.changeColor
+{ color : #ffaf30 !important; }
+
+#ActiveUsers li *
+{
+	display : inline-block;
+}
+
+#ActiveUsers li input
+{
+	width         : 8%;
+	margin-bottom : 5px;
+}
+
+.ui-mobile label
+{
+	width : 90%; font-size : 200%;
+	color : #e8e8e9;
+}
+
+.ui-btn
+{
+	width : 100% !important; margin : 10px auto;
+}
+
+#addMembers
+{
+	width : 100% !important;
+}
+
+/*______________end Active Users CLASESS__________*/
+@media (min-device-width : 380px) and (max-device-width : 481px)
+{
+	#ActiveUsers li
+	{
+		font-size : 90%;
+	}
+}
